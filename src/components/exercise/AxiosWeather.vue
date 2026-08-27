@@ -7,7 +7,7 @@ const handleFetchWeather = async () => {
   isLoading.value = true
   const lat = 38.964556
   const lon = -92.325556
-  const API_KEY = '4c214dc631b9e0544dd3bb98f9da1caf'
+  const API_KEY = import.meta.env.VITE_API_KEY
   const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
 
   try {
@@ -28,9 +28,9 @@ const handleFetchWeather = async () => {
   <h3>미주리 주 컬럼비아의 날씨</h3>
   <div class="practice-section">
     <h2>Axios 통신 검증</h2>
-    <button @click="handleFetchWeather" :disabled="isLoading">
+    <el-button @click="handleFetchWeather" :disabled="isLoading">
       {{ isLoading ? '데이터 로딩 중...' : '실시간 날씨 당겨오기' }}
-    </button>
+    </el-button>
     <div v-if="weatherData" class="result-card">
       <p>
         위치:

@@ -14,7 +14,7 @@ defineProps({
 <template>
   <div class="search-inner">
     <h3>🔍 도시 검색</h3>
-    <input
+    <el-input
       type="text"
       :value="currentQuery"
       @input="$emit('update-query', $event.target.value)"

@@ -1,6 +1,6 @@
 <script setup>
 import { ElMessage, ElMessageBox } from 'element-plus'
-import { provide, ref } from 'vue'
+import { ref } from 'vue'
 const userForm = ref({ email: '', agree: false })
 const handleRegister = () => {
   if (!userForm.value.email.includes('@')) {
@@ -48,6 +48,7 @@ const startDownload = () => {
 </script>
 
 <template>
+  <h2>Element-plus 사용</h2>
   <div>
     <h3>실습 1. 회원가입 Form & 인풋 제어</h3>
     <p>이메일 주소:</p>

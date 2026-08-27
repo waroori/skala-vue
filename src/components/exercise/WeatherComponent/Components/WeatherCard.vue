@@ -19,9 +19,12 @@ const emit = defineEmits(['select-card', 'click-detail'])
     <span v-if="cityItem.temp >= 25" class="badge hot">🔥 더움</span>
     <span v-else class="badge cool">❄️ 선선함</span>
 
-    <button class="btn-detail" @click.stop="emit('click-detail', cityItem.name, cityItem.status)">
+    <el-button
+      class="btn-detail"
+      @click.stop="emit('click-detail', cityItem.name, cityItem.status)"
+    >
       상세보기
-    </button>
+    </el-button>
   </div>
 </template>
 

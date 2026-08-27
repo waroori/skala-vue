@@ -33,7 +33,7 @@ const showDetail = (cityName, status) => {
 <template>
   <div class="dashboard-wrapper">
     <h3>도시 검색</h3>
-    <input
+    <el-input
       type="text"
       :value="searchQuery"
       @input="(e) => (searchQuery = e.target.value)"
@@ -45,7 +45,7 @@ const showDetail = (cityName, status) => {
       <p>현재 기온 : {{ CITY.temp }}</p>
       <p v-if="CITY.temp >= 20">더움</p>
       <p v-else>시원함</p>
-      <button @click="showDetail(CITY.name, CITY.status)">상세보기</button>
+      <el-button @click="showDetail(CITY.name, CITY.status)">상세보기</el-button>
     </div>
   </div>
 </template>

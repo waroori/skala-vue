@@ -36,15 +36,10 @@ const showCity = (cityName) => {
     <p>{{ whichcity }}</p>
     <br />
 
-    <div
-      class="cityBlock"
-      @click="showCity(city.name)"
-      v-for="(city, index) in weatherList"
-      :key="city.id"
-    >
+    <div class="cityBlock" @click="showCity(city.name)" v-for="city in weatherList" :key="city.id">
       <div v-if="search == city.name">
         {{ city.name }} ( {{ city.status }} )
-        <button @click.stop="showDetail(city.name, city.status)">상세보기</button>
+        <el-button @click.stop="showDetail(city.name, city.status)">상세보기</el-button>
         <p v-if="city.temp > 25">더움 현재기온: {{ city.temp }}</p>
         <p v-else>선선함 현재기온: {{ city.temp }}</p>
         <br />

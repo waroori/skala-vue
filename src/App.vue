@@ -42,11 +42,11 @@ const isVisible5 = ref(false)
 </script>
 <template>
   <div style="padding: 20px">
-    <button @click="isVisible1 = !isVisible1">day1 표시/숨김</button>
-    <button @click="isVisible2 = !isVisible2">day2 표시/숨김</button>
-    <button @click="isVisible3 = !isVisible3">day3 표시/숨김</button>
-    <button @click="isVisible4 = !isVisible4">day4 표시/숨김</button>
-    <button @click="isVisible5 = !isVisible5">날씨 실습 시리즈 표시/숨김</button>
+    <el-button @click="isVisible1 = !isVisible1">day1 표시/숨김</el-button>
+    <el-button @click="isVisible2 = !isVisible2">day2 표시/숨김</el-button>
+    <el-button @click="isVisible3 = !isVisible3">day3 표시/숨김</el-button>
+    <el-button @click="isVisible4 = !isVisible4">day4 표시/숨김</el-button>
+    <el-button @click="isVisible5 = !isVisible5">날씨 실습 시리즈 표시/숨김</el-button>
 
     <div id="1st day" v-show="isVisible1">
       <SampleOne />

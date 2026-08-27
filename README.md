@@ -78,4 +78,7 @@ npm run lint
 - Axios를 통해 API 데이터를 CRUD하는 학습 (AxiosWeather, AxiosJson)
 - UI Library를 통해서 여러가지 유용한 툴을 추가로 사용가능합니다.
 - element plus로 쉽게 컴포넌트 사용 (UserForm)
--
+- Lint를 통해 자동적으로 문법오류를 감지하고 npm run lint로 전체적인 오류를 계산합니다
+- Pritter, Environment Variables, Build로 여러 개발환경에서 효율적으로 작업 가능합니다.
+
+# 궁금하고 어려웠던 점들
