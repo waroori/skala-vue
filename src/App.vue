@@ -33,6 +33,7 @@ import AxiosWeather from './components/exercise/AxiosWeather.vue'
 import AxiosJson from './components/practices/day4/AxiosJson.vue'
 import UserForm from './components/practices/day4/UserForm.vue'
 import WeatherParent from './components/exercise/WeatherComponent/WeatherParent.vue'
+import UnitToggler from './components/exercise/UnitToggler.vue'
 const isVisible1 = ref(false)
 const isVisible2 = ref(false)
 const isVisible3 = ref(false)
@@ -145,6 +146,41 @@ const isVisible5 = ref(false)
       <br />
       <hr />
       <AxiosWeather />
+
+      <div class="app-container">
+        <h1>⛅ 과제 4: 라우터적용</h1>
+        <hr />
+        <div class="dashboard-wrapper">
+          <nav class="navigation-bar">
+            <RouterLink to="/" class="nav-item">🌦️ 날씨 대시보드</RouterLink>
+            <span class="divider">|</span>
+            <RouterLink to="/about" class="nav-item">ℹ️ 서비스 소개</RouterLink>
+          </nav>
+          <main>
+            <RouterView />
+            <!-- RouterView v-slot="{ Component }">
+          <KeepAlive>
+            <component :is="Component" />
+          </KeepAlive>
+        </RouterView-->
+          </main>
+        </div>
+      </div>
+      <div class="app-container">
+        <h1>⛅ 과제 5: 스토어적용</h1>
+        <hr />
+        <div class="dashboard-wrapper">
+          <nav class="navigation-bar">
+            <RouterLink to="/" class="nav-item">🌦️ 날씨 대시보드</RouterLink>
+            <span class="divider">|</span>
+            <RouterLink to="/about" class="nav-item">ℹ️ 서비스 소개</RouterLink>
+            <UnitToggler />
+          </nav>
+          <main>
+            <RouterView />
+          </main>
+        </div>
+      </div>
     </div>
   </div>
 </template>

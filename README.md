@@ -69,8 +69,13 @@ npm run lint
 - 2일차 종합 (WeatherComposition)
 - 실습에 적용하여 날씨 검색 구현
 
+# 3일차
+
+-
+
 # 4일차
 
 - Axios를 통해 API 데이터를 CRUD하는 학습 (AxiosWeather, AxiosJson)
+- UI Library를 통해서 여러가지 유용한 툴을 추가로 사용가능합니다.
 - element plus로 쉽게 컴포넌트 사용 (UserForm)
 -
