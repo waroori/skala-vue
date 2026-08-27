@@ -24,7 +24,7 @@ const handleFetchWeather = async () => {
 }
 </script>
 
-<template>
+<template class="dashboard-wrapper">
   <h3>미주리 주 컬럼비아의 날씨</h3>
   <div class="practice-section">
     <h2>Axios 통신 검증</h2>

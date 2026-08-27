@@ -25,7 +25,7 @@ const showCity = (cityName) => {
 </script>
 
 <template>
-  <div>
+  <div class="dashboard-wrapper">
     <p>mockup 날씨 검색 (서울,수원,부산,인천,대구,대전,광주,울산,세종,제주)</p>
     <input
       type="text"

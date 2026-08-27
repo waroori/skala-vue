@@ -49,3 +49,9 @@ const showDetail = (cityName, status) => {
     </div>
   </div>
 </template>
+
+<style>
+p {
+  padding: 7px;
+}
+</style>
