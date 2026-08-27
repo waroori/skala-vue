@@ -41,6 +41,7 @@ const isVisible4 = ref(false)
 const isVisible5 = ref(false)
 </script>
 <template>
+  <h1>Vue 종합실습</h1>
   <div style="padding: 20px">
     <el-button @click="isVisible1 = !isVisible1">day1 표시/숨김</el-button>
     <el-button @click="isVisible2 = !isVisible2">day2 표시/숨김</el-button>
