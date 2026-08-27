@@ -45,13 +45,15 @@ npm run lint
 
 ### README 작성
 
-- App.vue는 각 일차별로 보는 것이 가능하게 되어있다.
+# App.vue는 각 일차별로 보는 것이 가능하게 되어있다.
 
-- 1일차
-- vue 기본적인 문법 연습
+# 1일차
+
+- vue 기본적인 문법 연습, 반응형 데이터
 - directive (VueBind, VueBindClass, VueBindShorthand, VueBindStyle, VueFor, VueIf)
 
-- 2일차
+# 2일차
+
 - 1일차에 이어 주요 문법 학습
 - event(v-on) (EventBasic, EventModifier, EventObject)
 - model(v-model) (ModelBasic, ModelForml, ModelModifier)
@@ -66,5 +68,7 @@ npm run lint
 
 - 2일차 종합 (WeatherComposition)
 - 실습에 적용하여 날씨 검색 구현
+
+# 4일차
 
 - Axios를 통해 API 데이터를 CRUD하는 학습 (AxiosWeather, AxiosJson)
