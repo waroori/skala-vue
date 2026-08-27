@@ -29,13 +29,15 @@ import WeatherComposition from './components/exercise/WeatherComposition.vue'
 
 import LifeCycle from './components/practices/day3/LifeCycle.vue'
 
-import AxiosWeather from './components/practices/day4/AxiosWeather.vue'
+import AxiosWeather from './components/exercise/AxiosWeather.vue'
 import AxiosJson from './components/practices/day4/AxiosJson.vue'
 import UserForm from './components/practices/day4/UserForm.vue'
+import WeatherParent from './components/exercise/WeatherComponent/WeatherParent.vue'
 const isVisible1 = ref(false)
 const isVisible2 = ref(false)
 const isVisible3 = ref(false)
 const isVisible4 = ref(false)
+const isVisible5 = ref(false)
 </script>
 <template>
   <div style="padding: 20px">
@@ -43,6 +45,7 @@ const isVisible4 = ref(false)
     <button @click="isVisible2 = !isVisible2">day2 표시/숨김</button>
     <button @click="isVisible3 = !isVisible3">day3 표시/숨김</button>
     <button @click="isVisible4 = !isVisible4">day4 표시/숨김</button>
+    <button @click="isVisible5 = !isVisible5">날씨 실습 시리즈 표시/숨김</button>
 
     <div id="1st day" v-show="isVisible1">
       <SampleOne />
@@ -95,9 +98,6 @@ const isVisible4 = ref(false)
       <ComputedBasic />
       <br />
       <hr />
-      <WeatherMockup />
-      <br />
-      <hr />
       <WatchersBasic />
       <br />
       <hr />
@@ -117,9 +117,6 @@ const isVisible4 = ref(false)
       <br />
       <hr />
       <WatchersWatchEffect />
-      <br />
-      <hr />
-      <WeatherComposition />
     </div>
     <div id="3rd day" v-show="isVisible3">
       <br />
@@ -129,13 +126,25 @@ const isVisible4 = ref(false)
     <div id="4th day" v-show="isVisible4">
       <br />
       <hr />
-      <AxiosWeather />
-      <br />
-      <hr />
       <AxiosJson />
       <br />
       <hr />
       <UserForm />
+    </div>
+
+    <div id="weather" v-show="isVisible5">
+      <br />
+      <hr />
+      <WeatherMockup />
+      <br />
+      <hr />
+      <WeatherComposition />
+      <br />
+      <hr />
+      <WeatherParent />
+      <br />
+      <hr />
+      <AxiosWeather />
     </div>
   </div>
 </template>
